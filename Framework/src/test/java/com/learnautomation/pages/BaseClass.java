@@ -27,7 +27,7 @@ public class BaseClass
 	@BeforeClass
 	public void setUp()
 	{
-		driver =  BrowserFactory.startApplication(driver, "Chrome", "http://freeCRM.com"); 
+		driver =  BrowserFactory.startApplication(driver, cfg.getBrowser(), cfg.getAppURL()); 
 	}
 	
 	@AfterClass
